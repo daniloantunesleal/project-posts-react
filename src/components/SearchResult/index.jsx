@@ -1,0 +1,1 @@
+export const SearchResult = ({ result }) => <p>Foi encontrado {result} resultados</p>
