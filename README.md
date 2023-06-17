@@ -2,4 +2,4 @@
 
 Este foi meu primeiro contato com React.js!
 
-Clique [aqui](https://startling-marigold-81f4cc.netlify.app) para acessar o site.
+Clique [aqui](https://startling-marigold-81f4cc.netlify.app) para acessar o projeto.
