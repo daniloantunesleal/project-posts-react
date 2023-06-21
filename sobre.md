@@ -1,1 +1,0 @@
-# Meu primeiro projeto com React.js, muito simples, mas este foi meu primeiro contato.
