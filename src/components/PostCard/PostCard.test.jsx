@@ -5,7 +5,7 @@ const props = {
     title: "this is the title",
     body: "this is the body",
     id: 1,
-    cover: "img/daniloaleal.png"
+    cover: "img/daniloaleal.png",
 };
 
 describe("<PostCard />", () => {
@@ -20,7 +20,6 @@ describe("<PostCard />", () => {
     it("should match snapshot", () => {
         const { container } = render(<PostCard {...props} />);
 
-        // eslint-disable-next-line testing-library/no-node-access
         expect(container.firstChild).toMatchSnapshot();
     });
 });
