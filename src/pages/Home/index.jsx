@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { loadPosts } from '../../utils/load-posts';
 import { Posts } from '../../components/Posts';
 import { Button } from '../../components/Button';
-import { SearchValue } from '../../components/SearchInput';
+import { SearchInput } from '../../components/SearchInput';
 import { SearchResult } from '../../components/SearchResult';
 
 export const Home = () => {
@@ -42,7 +42,6 @@ export const Home = () => {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    console.log(value)
     
     setSearchValue(value)
   }
@@ -57,7 +56,7 @@ export const Home = () => {
             </>
           )}
           
-          <SearchValue handleChange={handleChange} value={searchValue} />
+          <SearchInput handleChange={handleChange} value={searchValue} />
         </div>
 
         {filteredPosts.length > 0 && (
