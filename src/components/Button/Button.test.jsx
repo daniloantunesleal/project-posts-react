@@ -2,7 +2,6 @@ import userEvent from "@testing-library/user-event";
 import { Button } from "."
 import { render, screen } from "@testing-library/react"
 
-
 describe("<Button />", () => {
     it("should render the button with the text \"Load more\"", () => {
         render(<Button text="Load more" />);

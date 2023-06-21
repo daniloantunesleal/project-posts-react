@@ -34,6 +34,12 @@ describe("<Posts />", () => {
     
     })
 
+    it("should not render posts", () => {
+        render(<Posts />)
+
+        expect(screen.queryAllByRole("heading", { name: /this is the title/i })).not.toBeInTheDocument()
+    })
+
     it("should match snapshot", () => {
         const { container } = render(<Posts {...props} />)
 
