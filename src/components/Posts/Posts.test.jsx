@@ -37,7 +37,7 @@ describe("<Posts />", () => {
     it("should not render posts", () => {
         render(<Posts />)
 
-        expect(screen.queryAllByRole("heading", { name: /this is the title/i })).not.toBeInTheDocument()
+        expect(screen.queryAllByRole("heading", { name: /this is the title/i })).toHaveLength(0)
     })
 
     it("should match snapshot", () => {
